@@ -30,7 +30,7 @@ Boot a Raspi from the rpi-master SD-card, login through ssh (ssh root@rpi-master
 ```
 git clone https://github.com/juulsme/k8s-on-rpi
 cd k8s-on-rpi/
-git checkout k8s-1.2
+git checkout k8s-1.3.0-alpha4
 ./install-k8s-master.sh
 ```
 
@@ -41,7 +41,7 @@ When the nano-editor pops-up, change the rpi-master reference either to the mast
 ```
 git clone https://github.com/juulsme/k8s-on-rpi
 cd k8s-on-rpi/
-git checkout k8s-1.2
+git checkout k8s-1.3.0-alpha4
 ./install-k8s-worker.sh
 ```
 After the script completes, please reboot the worker, with the master node up and running. If everything is ok,
