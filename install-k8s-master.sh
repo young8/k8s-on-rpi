@@ -45,9 +45,9 @@ echo "Starting the docker service"
 systemctl start docker.service
 
 echo "Pulling necessary hyperkube Docker image"
-docker pull gcr.io/google_containers/hyperkube-arm:v1.2.0
+docker pull gcr.io/google_containers/hyperkube-arm:v1.3.0-alpha.4
 echo "Starting the kubernetes master service"
 systemctl start k8s-master.service
 
-curl -fsSL -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v1.2.0/bin/linux/arm/kubectl
+curl -fsSL -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v1.3.0-alpha.4/bin/linux/arm/kubectl
 chmod a+x /usr/bin/kubectl
